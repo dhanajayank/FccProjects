@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Survey Form
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<h1 id="title">Survey Form</h1>
+		</header>
+		<main id="formouter">
+			<section id="description">
+				<p>Awareness about climate change</p>
+			</section>
+			<section><!--Form section-->
+				<form id="survey-form" method="GET">
+					<div class="rowtab">
+						<div class="labels">
+							<label id="name-label" for="name">* Name</label>
+						</div>
+						<div class="righttab">
+							<input type="text" name="name" autofocus id="name" class="input-field" placeholder="Enter Your Name" required>
+						</div>
+					</div><!--End-of rowtab-->
+					<div class="rowtab">
+						<div class="labels">
+							<label id="E-mail-label" for="email">* E-mail</label>
+						</div>
+						<div class="righttab">
+							<input type="email" class="input-field" id="email" name="email" placeholder="Enter Your E-mail id" required>
+						</div>
+					</div><!--End-of rowtab-->
+					<div class="rowtab">
+						<div class="labels">
+							<label id="Age-label" for="age">* Age</label>
+						</div>
+						<div class="righttab">
+							<input type="number" name="age" class="input-field" min="1" max="125" id="age" required>
+						</div>
+					</div><!--End-of rowtab-->
+					<div class="rowtab">
+						<div class="labels">
+							<label for="Level of education">Highest Level of Education</label>
+						</div>
+						<div class="righttab">
+							<select class="dropdown" id="dropdown" name="Education">
+								<option disabled value>Select an option</option>
+								<option value="No_School">No formal Education</option>
+								<option value="High_School">High School</option>
+								<option value="College">College Degree</option>
+								<option value="Graduate">Graduate Degree</option>
+							</select>
+						</div>
+					</div><!--End-of rowtab-->
+					<div class="rowtab">
+						<div class="labels">
+							<label>Which of the following terms are you aware of?</label>
+						</div>
+						<div class="righttab">
+							<ul class="checkbox" style="list-style: none; padding-left: 0px;">
+								<li><label><input type="checkbox" name="GlobalWarming" value="1">GlobalWarming</label></li>
+								<li><label><input type="checkbox" name="TheGreenHouseEffect" value="2">TheGreenHouse Effect</label></li>
+								<li><label><input type="checkbox" name="GlobalWarming" value="3">Climate Change</label></li>
+								<li><label><input type="checkbox" name="GlobalWarming" value="4">Energy Efficiency</label></li>
+								<li><label><input type="checkbox" name="GlobalWarming" value="5">Renewable Energy</label></li>
+							</ul>
+						</div>
+					</div><!--End-of rowtab-->
+					<div class="rowtab">
+						<div class="labels">
+							<label>How concerned are you that the earth's climate and long term weather patterns change?</label>
+						</div>
+						<div class="righttab">
+							<ul class="radio" style="list-style: none; padding-left: 0px;">
+								<li><label><input type="radio" name="concern" value="1">Not at all concerned</label></li>
+								<li><label><input type="radio" name="concern" value="2">Not very concerned</label></li>
+								<li><label><input type="radio" name="concern" value="3">Indifferent</label></li>
+								<li><label><input type="radio" name="concern" value="4">Fairly concerned</label></li>
+								<li><label><input type="radio" name="concern" value="5">Very concerned</label></li>
+								<li><label><input type="radio" name="concern" value="6">Don't know</label></li>
+							</ul>
+						</div>
+					</div><!--End-of rowtab-->
+					<div class="rowtab">
+						<div class="labels">
+							<label>Which of the following do you feel may be the consequences of climate change?</label>
+						</div>
+						<div class="righttab">
+							<ul class="checkbox" style="list-style: none; padding-left: 0px;">
+								<li><label><input type="checkbox"  name="consequences">Rise in temperature</label></li>
+								<li><label><input type="checkbox"  name="consequences">Increased rise of floods</label></li>
+								<li><label><input type="checkbox" name="consequences">Change in weather patterns</label></li>
+								<li><label><input type="checkbox"  name="consequences">Drought and water shortage</label></li>
+								<li><label><input type="checkbox"  name="consequences">Increased risk of diseases</label></li>
+							</ul>
+						</div>
+					</div><!--End-of rowtab-->
+					<div class="rowtab">
+						<div class="labels">
+							<label>Any additional thoughts about climate change that you would like to share with us</label>
+						</div>
+						<div class="righttab">
+							<textarea name="comments" class="textarea"  placeholder="Please add comments here"></textarea>
+						</div>
+					</div><!--End-of rowtab-->
+					<div id="buttonwrapper">
+						<button type="submit" name="submit" id="submit">Submit</button>		
+					</div>
+				</form><!--End-of-form-->
+			</section><!--End-of-form-section-->
+		</main>
+	</body>
+</html>
